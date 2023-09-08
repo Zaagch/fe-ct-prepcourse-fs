@@ -3,16 +3,21 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
+   var primerElemento = array[0];
+   return (primerElemento);
 }
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   var largo = array.length;
+   return (array[largo - 1]);
 }
 
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
+   return (array.length);
 }
 
 function incrementarPorUno(array) {
@@ -25,12 +30,16 @@ function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.push(elemento);
+   return (array);
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.unshift(elemento);
+   return (array);
 }
 
 function dePalabrasAFrase(palabras) {
@@ -39,24 +48,32 @@ function dePalabrasAFrase(palabras) {
    // con un espacio entre cada palabra.
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
    // Tu código:
+   var Frase = palabras.join(' ');
+   return (Frase);
 }
 
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
+   var Producto = array.includes(elemento);
+   return (Producto);
 }
 
 function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
+   var Suma = arrayOfNums 
 }
 
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
+   var suma = 0
+   resultadosTest.foreach (suma += elementoLista);
+   return (suma / resultadosTest.length);
 }
 
 function numeroMasGrande(arrayOfNums) {
@@ -75,6 +92,13 @@ function multiplicarArgumentos() {
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
+   var count = 0
+   for (var i=0; i < array.length; i++) {
+      if (array [i] > 18) {
+         count ++;
+      }
+   }
+   return (count);
 }
 
 function diaDeLaSemana(numeroDeDia) {
