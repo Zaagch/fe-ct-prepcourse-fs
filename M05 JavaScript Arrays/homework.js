@@ -24,6 +24,7 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+   return array.map((elem) => elem + 1);
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -64,16 +65,24 @@ function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
-   var Suma = arrayOfNums 
+   function sumarNums (a, b) {
+      return a + b;
+   }
+   var total = arrayOfNums.reduce(sumarNums);
+   return total;
 }
 
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
-   var suma = 0
-   resultadosTest.foreach (suma += elementoLista);
-   return (suma / resultadosTest.length);
+function testNums (a, b) {
+   return a + b;
+}
+var largo = resultadosTest.lenght;
+var total = resultadosTest.reduce(testNums) / largo;
+
+return total;
 }
 
 function numeroMasGrande(arrayOfNums) {
@@ -87,6 +96,7 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
+
 }
 
 function cuentoElementos(array) {
