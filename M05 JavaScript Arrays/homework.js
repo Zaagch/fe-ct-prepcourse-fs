@@ -68,27 +68,22 @@ function agregarNumeros(arrayOfNums) {
    function sumarNums (a, b) {
       return a + b;
    }
-   var total = arrayOfNums.reduce(sumarNums);
-   return total;
+   var totalUno = arrayOfNums.reduce(sumarNums);
+   return totalUno;
 }
 
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
-function testNums (a, b) {
-   return a + b;
-}
-var largo = resultadosTest.lenght;
-var total = resultadosTest.reduce(testNums) / largo;
-
-return total;
+   return totalUno(resultadosTest) / resultadosTest.lenght
 }
 
 function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
+   
 }
 
 function multiplicarArgumentos() {
